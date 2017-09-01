@@ -32,8 +32,10 @@
     
     .container {
         margin: 0 auto;
-        max-width: 74rem;
-        width: 90%;
+       max-width: 74rem;
+       width: 70%;
+       background: #fff;
+       padding: 20px;
     }
     /* HTML Styles */
     
