@@ -1,0 +1,221 @@
+    *,
+    *:before,
+    *:after {
+        -moz-box-sizing: border-box;
+        -webkit-box-sizing: border-box;
+        box-sizing: border-box;
+    }
+    
+    .clearfix:before,
+    .clearfix:after {
+        content: " ";
+        display: table;
+    }
+    
+    .clearfix:after {
+        clear: both;
+    }
+    
+    .clearfix {
+        *zoom: 1;
+    }
+    
+    html {
+        font-size: 90%;
+    }
+    
+    body {
+        background-color: #ddd;
+        color: #454546;
+        font-family: 'Open Sans', sans-serif;
+    }
+    
+    .container {
+        margin: 0 auto;
+       max-width: 74rem;
+       width: 70%;
+       background: #fff;
+       padding: 20px;
+    }
+    /* HTML Styles */
+    
+    h2 {
+        color: #383838;
+        font-size: 1.3rem;
+        line-height: 2rem;
+        margin: 0 0 1rem 0;
+        font-weight: bold;
+    }
+    
+    h3 {
+        color: #595959;
+        font-size: .8rem;
+        line-height: 1.6rem;
+        margin: 0 0 1rem 0;
+    }
+    /*  Links  */
+    
+    a:hover,
+    a:focus {
+        color: #ff6633;
+        text-decoration: none;
+    }
+    /* tile grid */
+    
+    .grid {
+       max-width: 800px;
+       position: relative;
+       height: 600px;
+       clear: both;
+       padding-top: 20px;
+    }
+    /* clearfix */
+    
+    .grid:after {
+        content: '';
+        display: block;
+        clear: both;
+    }
+    /* filters */
+    
+    .filters {
+        margin: 20px 0;
+    }
+    
+    .phaseSelector {
+        border: 1px solid #404040;
+        padding: 3px 5px;
+        color: #404040;
+        text-decoration: none;
+        margin: 2px;
+        float: left;
+        border-radius: 7px;
+        background: #fff;
+    }
+    /* plan */
+
+
+    .plan, .planactive  {
+        background: #404040;
+        color:#fff;
+    }
+
+    #plan:hover {
+        color: #fff;
+        background: #404040;
+        transition: 0.5s ease-in;
+        text-decoration: none;
+    }
+    
+    .understand, .understandactive {
+        background: #002857;
+        color:#fff;
+    }
+    #understand:hover {
+        color: #fff;
+        background: #002857;
+        transition: 0.5s ease-in;
+        text-decoration: none;
+    }
+    
+    .strategize, .strategizeactive {
+        background: #b4252d;
+        color:#fff;
+    }
+    #strategize:hover {
+        color: #fff;
+        background: #b4252d;
+        transition: 0.5s ease-in;
+        text-decoration: none;
+    }
+    .create, .createactive {
+        background: #5a2a82;
+        color:#fff;
+    }
+    #create:hover {
+        color: #fff;
+        background: #5a2a82;
+        transition: 0.5s ease-in;
+        text-decoration: none;
+    }
+    
+    .launch, .launchactive {
+        background: #638b18;
+        color:#fff;
+    }
+    #launch:hover {
+        color: #fff;
+        background: #638b18;
+        transition: 0.5s ease-in;
+        text-decoration: none;
+    }
+    
+    .maintain, .maintainactive {
+        background: #dc5f13;
+        color:#fff;
+    }
+    #maintain:hover {
+        color: #fff;
+        background: #dc5f13;
+        transition: 0.5s ease-in;
+        text-decoration: none;
+    }
+    
+    .active {
+        background: #404040;
+        color: #fff;
+    }
+    /* ---- grid ---- */
+    
+    
+    .grid-item {
+        width: 33%;
+       border: 1px solid #fff;
+       text-align: center;
+       max-height: 150px;
+       float: left;
+       border-radius: 15px;
+       max-width: 150px;
+    }
+    
+    .grid-item h3 {
+        color: #fff;
+        padding: .5em .5em;
+        font-weight: normal;
+    }
+    
+    .plan:hover,
+    .plan:focus {
+        background: #404040;
+        transition: background ease-in 0.5s;
+    }
+    
+    .understand:hover,
+    .understand:focus {
+        background: #002857;
+        transition: background ease-in 0.5s;
+    }
+    
+    .strategize:hover,
+    .strategize:focus {
+        background: #b4252d;
+        transition: background ease-in 0.5s;
+    }
+    
+    .create:hover,
+    .create:focus {
+        background: #5a2a82;
+        transition: background ease-in 0.5s;
+    }
+    
+    .launch:hover,
+    .launch:focus {
+        background: #638b18;
+        transition: background ease-in 0.5s;
+    }
+    
+    .maintain:hover,
+    .maintain:focus {
+        background: #dc5f13;
+        transition: background ease-in 0.5s;
+    }

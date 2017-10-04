@@ -1,36 +1,39 @@
- $(document).ready(function() {
+var phas = ["plan","understand","strategize","create","launch","maintain"];
+$(document).ready(function() {    
+$(".phaseSelector").click(function() {  
+    var thisPhase = $(this).attr('id');
+		var activePhase = "";
+		// Show all button
+		if (thisPhase == "reset"){
+			// reset links
+			$(".phaseSelector").removeClass("active");
+			// show all tools
+				$(".grid-item").hide( "scale", 500 );
+				//$(".grid-item").fadeOut("slow");
+				 for (i = 0; i <= 10; i++) {
+					 $("."+phas[i]).delay(504).show( "scale", 500 );
+					 //$("."+phas[i]).fadeIn("slow");
+				 }
+    	} else {
+			//show only active phase 
+		  for (i = 0; i <= 6; i++) {
+				//remove previous active phase
+				activePhase=$("#"+phas[i]).attr('id');
+					if (activePhase != thisPhase) {
+						$("."+phas[i]).hide( "scale", 500 );
+						//$("."+phas[i]).fadeOut("slow");
+						$("#"+phas[i]).removeClass("active");
+					} else {
+							// make current link active
+							$("#"+thisPhase).addClass("active");   
+							$("."+phas[i]).hide( "scale", 500 );
+							//$("."+phas[i]).fadeOut("slow");
+							
+							$("."+thisPhase).delay(510).show( "scale", 500 );
+							//$("."+thisPhase).delay(500).fadeIn("slow");
+					}// if
+        } // for
+    } // else
+});// click()
 
-            var phas = ["plan", "understand", "strategize", "create", "launch", "maintain"];
-
-            $(".phaseSelector").click(function() { // listens for click
-                var thisPhase = $(this).attr('id');
-                if (thisPhase == "reset") {
-
-                    // reset links
-                    for (i = 0; i <= phas.length; i++) {
-                        $(".phaseSelector").removeClass(phas[i]+"active");
-                    }
-
-                    // fadein all tiles
-                    $(".grid-item").fadeIn("slow");
-                } else {
-
-                    // make current link active
-                    $("#" + thisPhase).addClass(thisPhase+"active");
-
-                    for (i = 0; i <= phas.length; i++) {
-
-                        // fade in tiles that are active
-                        if ($("#" + phas[i]).hasClass(phas[i]+"active")) {
-                            $("." + phas[i]).fadeIn("slow");
-                        } else {
-
-                            // fadeout tiles that not active
-                            $("." + phas[i]).fadeOut("slow");
-                        } // if
-                    } // for
-                } // else
-
-            }); // click()
-
-        });
+});
