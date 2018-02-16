@@ -6,7 +6,7 @@
         box-sizing: border-box;
     }
     
-    .clearfix:before,
+   /* .clearfix:before,
     .clearfix:after {
         content: " ";
         display: table;
@@ -18,7 +18,7 @@
     
     .clearfix {
         *zoom: 1;
-    }
+    }*/
     
     html {
         font-size: 90%;
@@ -31,11 +31,11 @@
     }
     
     .container {
-        margin: 0 auto;
-       max-width: 74rem;
-       width: 70%;
-       background: #fff;
-       padding: 20px;
+        margin: 0;
+        /* max-width: 74rem; */
+        /* width: 70%; */
+        background: #fff;
+        padding: 20px;
     }
     /* HTML Styles */
     
@@ -63,7 +63,6 @@
     /* tile grid */
     
     .grid {
-       max-width: 800px;
        position: relative;
        height: 600px;
        clear: both;
@@ -83,14 +82,16 @@
     }
     
     .phaseSelector {
-        border: 1px solid #404040;
-        padding: 3px 5px;
-        color: #404040;
-        text-decoration: none;
-        margin: 2px;
-        float: left;
-        border-radius: 7px;
-        background: #fff;
+       /* border: 1px solid #404040; */
+       padding: 3px 5px;
+       color: #404040;
+       text-decoration: none;
+       margin: 0 15px;
+       float: left;
+       /* border-radius: 7px; */
+       background: #fff;
+       border-bottom: 2px solid #404040;
+       flex: 1 1 20%;
     }
     /* plan */
 
@@ -169,19 +170,22 @@
     
     
     .grid-item {
-        width: 33%;
-       border: 1px solid #fff;
-       text-align: center;
-       max-height: 150px;
-       float: left;
-       border-radius: 15px;
-       max-width: 150px;
+        /*width: 33%; */
+        border: 1px solid #fff;
+        text-align: center;
+        max-height: 200px;
+        /* float: left; */
+        border-radius: 15px;
+        /* max-width: 150px; */
+        text-decoration: none;
+        flex: 0 1 200px;
     }
     
     .grid-item h3 {
         color: #fff;
         padding: .5em .5em;
         font-weight: normal;
+        font-size: 20px;
     }
     
     .plan:hover,
@@ -219,3 +223,10 @@
         background: #dc5f13;
         transition: background ease-in 0.5s;
     }
+
+    @media screen and (max-width:375px) {
+        grid {
+            height: 30vh;
+        }
+    }
+
