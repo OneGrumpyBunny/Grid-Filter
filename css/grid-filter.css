@@ -93,69 +93,69 @@
        border-bottom: 2px solid #404040;
        flex: 1 1 20%;
     }
-    /* plan */
+    /* cat1 */
 
 
-    .plan, .planactive  {
+    .cat1, .cat1active  {
         background: #404040;
         color:#fff;
     }
 
-    #plan:hover {
+    #cat1:hover {
         color: #fff;
         background: #404040;
         transition: 0.5s ease-in;
         text-decoration: none;
     }
     
-    .understand, .understandactive {
+    .cat2, .cat2active {
         background: #002857;
         color:#fff;
     }
-    #understand:hover {
+    #cat2:hover {
         color: #fff;
         background: #002857;
         transition: 0.5s ease-in;
         text-decoration: none;
     }
     
-    .strategize, .strategizeactive {
+    .cat3, .cat3active {
         background: #b4252d;
         color:#fff;
     }
-    #strategize:hover {
+    #cat3:hover {
         color: #fff;
         background: #b4252d;
         transition: 0.5s ease-in;
         text-decoration: none;
     }
-    .create, .createactive {
+    .cat4, .cat4active {
         background: #5a2a82;
         color:#fff;
     }
-    #create:hover {
+    #cat4:hover {
         color: #fff;
         background: #5a2a82;
         transition: 0.5s ease-in;
         text-decoration: none;
     }
     
-    .launch, .launchactive {
+    .cat5, .cat5active {
         background: #638b18;
         color:#fff;
     }
-    #launch:hover {
+    #cat5:hover {
         color: #fff;
         background: #638b18;
         transition: 0.5s ease-in;
         text-decoration: none;
     }
     
-    .maintain, .maintainactive {
+    .cat6, .cat6active {
         background: #dc5f13;
         color:#fff;
     }
-    #maintain:hover {
+    #cat6:hover {
         color: #fff;
         background: #dc5f13;
         transition: 0.5s ease-in;
@@ -188,38 +188,38 @@
         font-size: 20px;
     }
     
-    .plan:hover,
-    .plan:focus {
+    .cat1:hover,
+    .cat1:focus {
         background: #404040;
         transition: background ease-in 0.5s;
     }
     
-    .understand:hover,
-    .understand:focus {
+    .cat2:hover,
+    .cat2:focus {
         background: #002857;
         transition: background ease-in 0.5s;
     }
     
-    .strategize:hover,
-    .strategize:focus {
+    .cat3:hover,
+    .cat3:focus {
         background: #b4252d;
         transition: background ease-in 0.5s;
     }
     
-    .create:hover,
-    .create:focus {
+    .cat4:hover,
+    .cat4:focus {
         background: #5a2a82;
         transition: background ease-in 0.5s;
     }
     
-    .launch:hover,
-    .launch:focus {
+    .cat5:hover,
+    .cat5:focus {
         background: #638b18;
         transition: background ease-in 0.5s;
     }
     
-    .maintain:hover,
-    .maintain:focus {
+    .cat6:hover,
+    .cat6:focus {
         background: #dc5f13;
         transition: background ease-in 0.5s;
     }

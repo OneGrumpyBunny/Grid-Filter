@@ -1,4 +1,4 @@
-var phas = ["plan","understand","strategize","create","launch","maintain"];
+var phas = ["cat1","cat2","cat3","cat4","cat5","cat6"];
 $(document).ready(function() {    
 $(".phaseSelector").click(function() {  
     var thisPhase = $(this).attr('id');
